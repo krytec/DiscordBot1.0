@@ -22,7 +22,7 @@ public class Main {
             builder = new JDABuilder(AccountType.BOT)
             .setToken(Constants.discordtoken)
             .setStatus(OnlineStatus.DO_NOT_DISTURB)
-            .setGame(new Game() {
+            .setGame(new Game(null) {
                 @Override
                 public String getName() {
                     return "Pen and Paper";
